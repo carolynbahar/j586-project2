@@ -1,0 +1,25 @@
+html{
+    font-family: arial;
+    font-size: 12px;
+}
+
+.flexslider{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.caption{
+    background-color: white;
+    opacity: 0.6;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1em;
+    position: relative;
+    top: -250px;
+    margin-bottom: -300px;
+}
