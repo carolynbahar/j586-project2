@@ -1,6 +1,7 @@
 html{
     font-family: arial;
-    font-size: 12px;
+    font-size: 10px;
+    color: #222;
 }
 
 .flexslider{
@@ -13,18 +14,65 @@ html{
     vertical-align: middle;
 }
 
-.caption{
-    background-color: white;
-    opacity: 0.6;
+.info{
+    color: #222;
     display: inline-block;
     vertical-align: middle;
-    padding: 1em;
+    padding: 0 1em .5em 1em;
     position: relative;
-    top: -230px;
-    margin-bottom: -300px;
+    top: -140px;
+    line-height:1.2em;
+    margin-bottom: -140px;
 }
 
-.quizz{
-    width: 100%;
+.caption{
+    background: white;
+    height: 7em;
+    
+}
+
+.quote{
+    background: white;
+    max-width: 50%;
+    height: 7em;
+    padding-top: .5em;
+    padding-left: 0;
+}
+
+.quiz{
     height: 600px;
+    width: 100%;
+    border: none;
+}
+
+.rater{
+    color: #222;
+    background: white;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1.75m;
+    position: relative;
+        top: -230px;
+        left: 100px;
+    margin-bottom: -300px;
+    line-height:1.2em;
+}
+
+a:link{
+    color: #222;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #969696;
+    text-decoration: none;
+}
+
+.rateit{
+    margin-top: .5em;
 }
