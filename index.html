@@ -3,35 +3,259 @@
 <html>
 <head>
     <title>JOMC 586: Project 2</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="js/bootstrap-rating.js"></script>
     
-   <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-    
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
-    
-    <link href="css/stylish.css" rel="stylesheet" media="screen" type="text/css">
-    
-    
+    <link href="css/styles.css" rel="stylesheet" media="screen" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/jRating.jquery.css" media="screen" />
+        <!-- jQuery files -->
+        <script type="text/javascript" src="js/jRating.jquery.js"></script>
 </head>
 
 <body>
     
     
-
+    
 
 <script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    
+  });
 
-  $('input').rating();
+  
+});
+
+
+$(document).ready(function(){
+	$(".rateit").jRating({
+	  showRateInfo:false
+	});
+  });
 
 </script>
 
 
-<input type="hidden" class="rating"/>
 
+
+<div class="col-md-12 hidden-xs hidden-sm">
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img class="image" src="images/sneakers-01.png" />
+    </li>
+    
+    <li>
+      <img class="image" src="images/sneakers-02.png" />
+    
+    <div class="row info">
+        <div class="caption col-sm-3">
+            <h4><a href="https://www.jcrew.com/mens_category/shoes/sneakers/PRDOVR~B2762/B2762.jsp target="_blank">New Balance 998</a></h4>
+            Thoughts? Rate it!<br>
+            <div class="rateit">
+            </div>
+        </div>
+        <div class="quote col-sm-9">This New Balance sneaker has been featured on J.Crew for a bit over a year and has been selling out. One of the newer shoes in the round-up, but this 1993 sneaker's traditional suede and mesh construction lets it stand as one of their best yet.
+        </div>
+    </div>
+
+
+    </li>
+    <li>
+      <img src="images/sneakers-03.png" />
+      <div class="row info">
+        <div class="caption col-sm-4">
+            <h4><a href="http://www.adidas.com/us/stan_smith target="_blank">Adidas Stan Smith</a></h4>
+            Thoughts? Rate it!<br>
+            <div class="rateit">
+            </div>
+        </div>
+        <div class="quote col-sm-8">In 1972, Stan Smith designed these kicks for Adidas, which were the first leather tennis shoes on the market. Recently, the shoes has been collaborated with brands like Raf Simons and Colette. Celebritie fans include Kanye West, Pharell, and Marc Jacobs.
+        </div>
+    </div>
+    </li>
+    
+    <li>
+      <img src="images/sneakers-04.png" />
+      <div class="row info">
+        <div class="caption col-sm-3">
+            <h4><a href="http://store.nike.com/us/en_us/pw/blazer/br7 target="_blank">Nike Blazer High</a></h4>
+            Thoughts? Rate it!<br>
+            <div class="rateit">
+            </div>
+        </div>
+        <div class="quote col-sm-9">These sneakers became popular when Nike sponsored NBA Hall of Famer, George Gervin. It has since evolved from basketball shoe to casual sneaker. There have been collaborations with countless brands like Stussy, APC, Liberty, Commes des Garcons, etc.</i>
+        </div>
+    </div>
+    </li>
+    
+    <li>
+      <img src="images/sneakers-05.png" />
+      <div class="row info">
+        <div class="caption col-sm-4">
+            <h4><a href="https://www.jcrew.com/mens_category/shoes/sneakers/PRDOVR~B2762/B2762.jsp target="_blank">Converse Chuck Taylor</a></h4>
+            Thoughts? Rate it!<br>
+            <div class="rateit">
+            </div>
+        </div>
+        <div class="quote col-sm-8">The class Converse Chuck Taylors have captured the heart (or feet!?) of America with fans from punk skaters and rockers to FLOTUS Michelle Obama. Much like the Nike Blazers, Chuck Taylors started as a basketball shoe in 1908. Since then, they are a go-to pair of classic kicks.</br>
+        </div>
+    </div>
+    </li>
+    
+    <li>
+      <img src="images/sneakers-06.png" />
+      <div class="row info">
+        <div class="caption col-sm-3">
+            <h4><a href="https://www.jcrew.com/mens_category/shoes/sneakers/PRDOVR~B2762/B2762.jsp target="_blank">Vans Slip-On</a></h4>
+            Thoughts? Rate it!<br>
+            <div class="rateit">
+            </div>
+        </div>
+        <div class="quote col-sm-9">Vans slip-ons are as simple as it gets. These comfy kicks have been a huge trend in street style. The first pair were black and white checkered, but they have since come a long way with styles in perforated leather, colorful canvases, and metallic hues. It's a unisex shoes that goes great for anyone. 
+        </div>
+    </div>
+    </li>
+    <li>
+        <iframe class="quiz" src="quiz.html">
+        </iframe>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--mobile-->
+<div class="col-sm-12 hidden-lg hidden-md">
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img class="image" src="images/sneakers-01.png" />
+    </li>
+    
+    <li>
+      <img class="image" src="images/sneakers-02.png" />
+    
+    <div class="row info-sm">
+        <div class="caption-sm col-xs-5">
+            <h4><a href="https://www.jcrew.com/mens_category/shoes/sneakers/PRDOVR~B2762/B2762.jsp target="_blank">New Balance 998</a></h4>
+            Rate it!<br>
+            <div class="rateit">
+            </div>
+        </div>
+        <div class="quote-sm col-xs-7">This New Balance sneaker has been featured on J.Crew for a bit over a year and has been selling out. One of the newer shoes in the round-up, but this 1993 sneaker's traditional suede and mesh construction lets it stand as one of their best yet.
+        </div>
+    </div>
+
+
+    </li>
+    <li>
+      <img src="images/sneakers-03.png" />
+      <div class="row info-sm">
+        <div class="caption-sm col-xs-5">
+            <h4><a href="http://www.adidas.com/us/stan_smith target="_blank">Adidas Stan Smith</a></h4>
+            Rate it!<br>
+            <div class="rateit">
+            </div>
+        </div>
+        <div class="quote-sm col-xs-7">In 1972, Stan Smith designed these kicks for Adidas, which were the first leather tennis shoes on the market. Recently, the shoes has been collaborated with brands like Raf Simons and Colette. Celebritie fans include Kanye West, Pharell, and Marc Jacobs.
+        </div>
+    </div>
+    </li>
+    
+    <li>
+      <img src="images/sneakers-04.png" />
+      <div class="row info-sm">
+        <div class="caption-sm col-xs-5">
+            <h4><a href="http://store.nike.com/us/en_us/pw/blazer/br7 target="_blank">Nike Blazer High</a></h4>
+            Rate it!<br>
+            <div class="rateit">
+            </div>
+        </div>
+        <div class="quote-sm col-xs-5">These sneakers became popular when Nike sponsored NBA Hall of Famer, George Gervin. It has since evolved from basketball shoe to casual sneaker. There have been collaborations with countless brands like Stussy, APC, Liberty, Commes des Garcons, etc.</i>
+        </div>
+    </div>
+    </li>
+    
+    <li>
+      <img src="images/sneakers-05.png" />
+      <div class="row info-sm">
+        <div class="caption-sm col-xs-4">
+            <h4><a href="https://www.jcrew.com/mens_category/shoes/sneakers/PRDOVR~B2762/B2762.jsp target="_blank">Converse Chuck Taylor</a></h4>
+            Rate it!<br>
+            <div class="rateit">
+            </div>
+        </div>
+        <div class="quote-sm col-xs-8">The class Converse Chuck Taylors have captured the heart (or feet!?) of America with fans from punk skaters and rockers to FLOTUS Michelle Obama. Much like the Nike Blazers, Chuck Taylors started as a basketball shoe in 1908. Since then, they are a go-to pair of classic kicks.</br>
+        </div>
+    </div>
+    </li>
+    
+    <li>
+      <img src="images/sneakers-06.png" />
+      <div class="row info-sm">
+        <div class="caption-sm col-xs-4">
+            <h4><a href="https://www.jcrew.com/mens_category/shoes/sneakers/PRDOVR~B2762/B2762.jsp target="_blank">Vans Slip-On</a></h4>
+            Rate it!<br>
+            <div class="rateit">
+            </div>
+        </div>
+        <div class="quote-sm col-xs-8">Vans slip-ons are as simple as it gets. These comfy kicks have been a huge trend in street style. The first pair were black and white checkered, but they have since come a long way with styles in perforated leather, colorful canvases, and metallic hues. It's a unisex shoes that goes great for anyone. 
+        </div>
+    </div>
+    </li>
+    <li>
+        <iframe class="quiz-sm" src="quiz.html">
+        </iframe>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+<div class="col-md-12 source">
+    Sources:
+<a href="http://www.complex.com/sneakers/2015/01/stan-smith-reveals-favorite-sneaker">Adidas</a>
+<a href="http://footwearnews.com/2014/influencers/power-players/fnaa-2014-shoe-of-the-year-adidas-stan-smith-388/">Adidas</a>
+<a href="https://www.youtube.com/watch?v=0HbQh8a7Sls">Nike</a>
+<a href="http://www.bbc.com/culture/story/20140606-art-on-canvas-converse-shoes">Converse</a>
+<a href="http://articles.latimes.com/2009/may/24/image/ig-vans24">Vans</a>
+<a href="http://www.whowhatwear.com/accessory-report-slip-on-sneakers-winter-fashion-2014">Vans</a>
+</div>
 
 </body>
 </html>
