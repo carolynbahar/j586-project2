@@ -67,20 +67,21 @@ html{
     margin-bottom: -150px;
     position: relative;
     top: 35px;
-    left: 150px;
+    
     
     
 }
 
 .quiz{
     height: 400px;
-    width: 90%;
+    width: 100%;
     border: none;
     margin: 0 auto;
+    padding: 5em;
 }
 
 .quiz-sm{
-    height: 250px;
+    height: 30em;
     border: none;
     width: 85%;
     padding-left: 2.25em;
